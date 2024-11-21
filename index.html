@@ -68,7 +68,7 @@
       display: inline-block;
       background: #ff9800;
       color: #fff;
-      padding: 15px 35px;
+      padding: 20px 40px;
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
@@ -190,9 +190,45 @@
 
     /* 모바일 최적화 */
     @media (max-width: 768px) {
+      .header {
+        padding: 60px 20px;
+      }
       .header h1 {
         font-size: 2.8rem;
       }
+      .header p {
+        font-size: 1.4rem;
+      }
+      .cta-button {
+        padding: 15px 25px;
+        font-size: 1.2rem;
+      }
+      /* 성공 사례 카드 세로로 정렬 */
+      .cards {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+      /* 혜택 섹션 카드 세로 정렬 */
+      .benefit-list {
+        flex-direction: column;
+        align-items: center;
+      }
+      .benefit {
+        width: 90%;
+        margin-bottom: 20px;
+      }
+      /* 투자 운세 텍스트 크기 줄이기 */
+      .investment-fortune h2 {
+        font-size: 1.8rem;
+      }
+      .investment-fortune p {
+        font-size: 1.2rem;
+      }
+    }
       .header p {
         font-size: 1.4rem;
       }
@@ -233,9 +269,14 @@
   <!-- Open Graph Meta Tags for Preview Image -->
   <meta property="og:title" content="진주목걸이 - 성공적인 투자 소통방">
   <meta property="og:description" content="성공을 부르는 투자 소통방에 참여하고 수익을 내는 투자자들의 비밀을 알아보세요.">
-  <meta property="og:image" content="https://jinjoosotongbang.github.io/gongboobang/">
+  <meta property="og:image" content="https://jinjoosotongbang.github.io/gongboobang/preview_image.png">
   <meta property="og:url" content="https://jinjoosotongbang.github.io/gongboobang/">
   <meta property="og:type" content="website">
+  <!-- Twitter Card Meta Tags for better preview on social media -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="진주목걸이 - 성공적인 투자 소통방">
+  <meta name="twitter:description" content="성공을 부르는 투자 소통방에 참여하고 수익을 내는 투자자들의 비밀을 알아보세요.">
+  <meta name="twitter:image" content="https://jinjoosotongbang.github.io/gongboobang/preview_image.png">
 </head>
 <body>
   <!-- Header Section -->
@@ -304,4 +345,3 @@
   </section>
 </body>
 </html>
-
